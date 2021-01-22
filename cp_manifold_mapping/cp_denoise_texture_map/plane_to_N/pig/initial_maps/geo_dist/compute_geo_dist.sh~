@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Starting run at: `date`" 
+for i in $(seq 0 4429); do ./geo_dist_pt_to_Npts.out ../../partial_pig_refined1.txt $i >> ../partial_pig_refined1_geo_dist.txt ; echo $i; done
+echo "Job finished at: `date`"
